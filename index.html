@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assinment-01</title>
+    <style>
+      header {
+        width: 100%;
+        height: 100px;
+        background-image: url(/assets/images/card-6.jpg);
+        object-fit: cover;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      h1,
+      h2,
+      p {
+        margin: 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      h1 {
+        text-shadow: 2px 2px 8px black;
+
+        font-weight: 1000;
+        font-size: 60px;
+      }
+      .box {
+        width: 1000px;
+        height: 75px;
+        background-color: white;
+        opacity: 0.4;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+      .h1 {
+        margin: 0;
+        /* animation: move-left 2s ease infinite; */
+      }
+      .box h1 {
+        animation: move-left 10s ease infinite;
+      }
+      @keyframes move-left {
+        from {
+          transform: translateX(-800px);
+        }
+        to {
+          transform: translateX(1000px);
+        }
+      }
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .card {
+        background-color: pink;
+        border: 1px solid black;
+        overflow: hidden;
+        height: 300px;
+        position: relative;
+      }
+      .card-1 {
+        background-image: url(/assets/images/case-1.jpg);
+      }
+      .card-2 {
+        background-image: url(/assets/images/case-2.jpg);
+        background-size: cover;
+      }
+      .card-3 {
+        background-image: url(/assets/images/coding-2.jpg);
+        background-size: cover;
+      }
+      .card-4 {
+        background-image: url(/assets/images/card-4.jpg);
+        background-size: cover;
+      }
+      .card-5 {
+        background-image: url(/assets/images/card-5.jpg);
+        background-size: cover;
+      }
+      .card-6 {
+        background-image: url(/assets/images/card-6.jpg);
+        background-size: cover;
+      }
+      .center-box {
+        width: 100%;
+        height: 200px;
+        background-color: gray;
+        opacity: 0;
+        margin-top: 150px;
+        text-align: center;
+        color: white;
+      }
+      .card:hover .center-box {
+        position: absolute;
+        animation: down-up 4s ease-in-out 1;
+        opacity: 0.8;
+      }
+      button {
+        width: 100px;
+        height: 30px;
+        background: linear-gradient(to right, #00ff00, #008000);
+        color: white;
+        border-color: white;
+        cursor: pointer;
+      }
+      h2,
+      p {
+        margin-bottom: 10px;
+      }
+      h2 {
+        margin-top: 15px;
+      }
+
+      @keyframes down-up {
+        0% {
+          left: 0;
+          top: 200px;
+        }
+        50% {
+          left: 0;
+          top: 0;
+        }
+        100% {
+          left: 0;
+          top: 0;
+        }
+      }
+      button > a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- <h1>Assinment-04</h1> -->
+      <div class="box">
+        <h1>Assinment-04</h1>
+      </div>
+    </header>
+    <section>
+      <main>
+        <div class="card-container">
+          <div class="card card-1">
+            <div class="center-box">
+              <h2>Case-01</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia
+                sequi blanditiis quas corrupti eligendi non expedita, fuga
+                adipisci explicabo.
+              </p>
+              <button><a href="/pages/case-01.html">Click-Here</a></button>
+            </div>
+          </div>
+          <div class="card card-2">
+            <div class="center-box">
+              <h2>Case-02</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia
+                sequi blanditiis quas corrupti eligendi non expedita, fuga
+                adipisci explicabo.
+              </p>
+              <button><a href="/pages/case-02.html">Click-Here</a></button>
+            </div>
+          </div>
+          <div class="card card-3">
+            <div class="center-box">
+              <h2>Case-03</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia
+                sequi blanditiis quas corrupti eligendi non expedita, fuga
+                adipisci explicabo.
+              </p>
+              <button><a href="/pages/case-03.html">Click-Here</a></button>
+            </div>
+          </div>
+          <div class="card card-4">
+            <div class="center-box">
+              <h2>Case-04</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia
+                sequi blanditiis quas corrupti eligendi non expedita, fuga
+                adipisci explicabo.
+              </p>
+              <button><a href="/pages/case-04.html">Click-Here</a></button>
+            </div>
+          </div>
+          <div class="card card-5">
+            <div class="center-box">
+              <h2>Case-05</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia
+                sequi blanditiis quas corrupti eligendi non expedita, fuga
+                adipisci explicabo.
+              </p>
+              <button><a href="/pages/case-05.html">Click-Here</a></button>
+            </div>
+          </div>
+          <div class="card card-6">
+            <div class="center-box">
+              <h2>Case-06</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia
+                sequi blanditiis quas corrupti eligendi non expedita, fuga
+                adipisci explicabo.
+              </p>
+              <button><a href="/pages/case-06.html">Click-Here</a></button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

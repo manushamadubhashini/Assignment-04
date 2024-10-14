@@ -15,39 +15,15 @@
         height: 100vh;
         align-items: center;
       }
-      /* .outer-border {
-        width: 200px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: red;
-      } */
-      /* .outer-circle {
-        width: 365px;
-        height: 365px;
-        border-radius: 50%;
-        border: 20px solid;
-        border-color: white;
-        border-top-color: red;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: transform 1s ease-in-out;
-      } */
       .inner-circle {
         width: 350px;
         height: 350px;
         border-radius: 50%;
-        /* border: 20px solid;
-        border-color: white;
-        border-top-color: red; */
         background-color: gray;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-
-        /* transition: transform 1s ease-in-out; */
         position: relative;
       }
       .inner-circle::before {
@@ -69,7 +45,6 @@
         font-weight: 600;
       }
       .inner-circle:hover::before {
-        /* transform: rotate(360deg); */
         animation: move 2s ease 1;
       }
       @keyframes move {
